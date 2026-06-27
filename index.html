@@ -13,9 +13,9 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header class="site-header" id="top">
+  <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="logo" aria-label="Somos Puente — inicio">
+      <a href="index.html" class="logo" aria-label="Somos Puente — inicio">
         <span class="logo-somos">somos</span><span class="logo-puente">puente</span>
         <svg class="logo-underline" viewBox="0 0 180 20" aria-hidden="true">
           <path d="M4 14 C 50 4, 90 4, 130 10" />
@@ -25,14 +25,14 @@
 
       <nav class="main-nav" id="main-nav">
         <ul>
-          <li><a href="#inicio" class="nav-link active-link">Inicio</a></li>
-          <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          <li><a href="index.html" class="nav-link active-link">Inicio</a></li>
+          <li><a href="pages/quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+          <li><a href="pages/portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
         </ul>
       </nav>
 
-      <a href="#contacto" class="btn btn-tangerine btn-small header-cta">Hablemos</a>
+      <a href="pages/contacto.html" class="btn btn-tangerine btn-small header-cta">Hablemos</a>
 
       <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
         <span></span><span></span><span></span>
@@ -42,8 +42,8 @@
 
   <main>
 
-    <!-- ===== INICIO ===== -->
-    <section class="hero" id="inicio">
+    <!-- ===== HERO ===== -->
+    <section class="hero">
       <div class="container hero-inner">
 
         <p class="eyebrow">Coaching · Branding · Gestión de RRSS</p>
@@ -64,184 +64,51 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#quienes-somos" class="btn btn-forest">Conocé nuestra historia</a>
-          <a href="#contacto" class="btn btn-outline">
+          <a href="pages/quienes-somos.html" class="btn btn-forest">Conocé nuestra historia</a>
+          <a href="pages/contacto.html" class="btn btn-outline">
             Hablemos
             <svg class="doodle doodle-arrow" viewBox="0 0 40 30" aria-hidden="true"><path d="M2 26 C 14 18, 22 10, 36 4 M 24 4 L 36 4 L 33 14"/></svg>
           </a>
         </div>
 
         <ul class="hero-pillars" aria-label="Áreas de trabajo">
-          <li>Branding de marca</li>
-          <li>Gestión de Redes Sociales</li>
-          <li>Coaching &amp; estrategia</li>
+          <li><a href="pages/portfolio.html">Branding de marca</a></li>
+          <li><a href="pages/portfolio.html">Gestión de Redes Sociales</a></li>
+          <li><a href="pages/portfolio.html">Coaching &amp; estrategia</a></li>
         </ul>
       </div>
 
       <svg class="doodle doodle-scribble hero-scribble" viewBox="0 0 90 40" aria-hidden="true"><path d="M2 30 C20 8, 40 38, 60 14 C 70 4, 78 10, 88 6"/></svg>
     </section>
 
-    <!-- ===== QUIENES SOMOS ===== -->
-    <section class="about" id="quienes-somos">
-      <div class="container about-inner">
-
-        <p class="eyebrow eyebrow-light">Quiénes somos</p>
-        <h2 class="section-title light">
-          Un puente entre lo que sos
-          <em>y lo que querés construir</em>
-        </h2>
-
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              Después de años trabajando en redes sociales y acompañando marcas desde la
-              comunicación, notamos que el problema casi nunca era la falta de contenido,
-              sino la falta de dirección: proyectos con potencial, buenas ideas y personas
-              con ganas, pero sin lograr definir con claridad qué querían transmitir, cómo
-              diferenciarse o hacia dónde crecer.
-            </p>
-            <p>
-              Por eso, <strong>Somos Puente</strong> no es una agencia enfocada únicamente
-              en gestionar redes, sino un espacio de acompañamiento estratégico. Un puente
-              entre lo que una marca es hoy y lo que puede llegar a construir; entre su
-              esencia y su comunicación, entre la idea y la acción.
-            </p>
-            <p class="about-quote">
-              “No es falta de contenido. Es falta de dirección.”
-            </p>
-          </div>
-
-          <div class="about-values">
-            <article class="value-card">
-              <span class="ribbon">Misión</span>
-              <p>
-                Acompañar a emprendedores y marcas en la construcción de una comunicación
-                que los represente con honestidad. Ordenando ideas, encontrando dirección
-                y transformando eso en acciones concretas.
-              </p>
-            </article>
-            <article class="value-card">
-              <span class="ribbon">Visión</span>
-              <p>
-                Ser el espacio de referencia donde los emprendedores argentinos encuentran
-                claridad y acompañamiento real. Un lugar donde las marcas nacen desde
-                adentro hacia afuera, con propósito.
-              </p>
-            </article>
-            <article class="value-card">
-              <span class="ribbon">Valores</span>
-              <ul class="values-list">
-                <li>Escucha antes que solución</li>
-                <li>Claridad como acto de cuidado</li>
-                <li>Autenticidad sin disculpas</li>
-                <li>Acompañamiento real</li>
-                <li>Humanidad sobre performance</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="portfolio" id="portfolio">
+    <!-- ===== EXPLORAR (acceso a las otras páginas) ===== -->
+    <section class="explore">
       <div class="container">
-        <p class="eyebrow">Portfolio</p>
-        <h2 class="section-title">Marcas que ya cruzaron el puente</h2>
-        <p class="section-lead">
-          Cada proyecto empieza igual: escuchando antes de proponer. Estas son las tres
-          líneas de trabajo desde las que construimos comunicación con propósito.
-          <!-- Reemplazá los bloques de abajo por fotos reales de proyectos cuando estén disponibles. -->
-        </p>
+        <p class="eyebrow">Recorré el sitio</p>
+        <h2 class="section-title">¿Por dónde querés empezar<span class="doodle-asterisk" aria-hidden="true">＊</span>?</h2>
 
-        <div class="portfolio-grid">
+        <div class="explore-grid">
+          <a href="pages/quienes-somos.html" class="explore-card explore-forest">
+            <svg viewBox="0 0 60 60" aria-hidden="true" class="explore-icon"><circle cx="30" cy="22" r="10"/><path d="M14 48 C 14 36, 22 32, 30 32 C 38 32, 46 36, 46 48"/></svg>
+            <h3>Quiénes Somos</h3>
+            <p>Nuestra historia, la filosofía detrás de la marca y las personas que la integran.</p>
+            <span class="explore-link">Conocer más →</span>
+          </a>
 
-          <article class="port-card port-forest">
-            <div class="port-visual">
-              <svg viewBox="0 0 60 60" aria-hidden="true" class="port-icon"><circle cx="20" cy="20" r="14"/><path d="M12 20 L 18 26 L 30 12"/></svg>
-            </div>
-            <div class="port-body">
-              <h3>Branding de Marca</h3>
-              <p>Identidad, paleta, tipografía y voz: la base sólida sobre la que se construye todo lo demás.</p>
-            </div>
-          </article>
+          <a href="pages/portfolio.html" class="explore-card explore-blue">
+            <svg viewBox="0 0 60 60" aria-hidden="true" class="explore-icon"><rect x="14" y="12" width="32" height="36" rx="4"/><path d="M22 24 h16 M22 32 h16 M22 40 h10"/></svg>
+            <h3>Portfolio</h3>
+            <p>Las líneas de trabajo desde las que construimos comunicación con propósito.</p>
+            <span class="explore-link">Ver trabajo →</span>
+          </a>
 
-          <article class="port-card port-blue">
-            <div class="port-visual">
-              <svg viewBox="0 0 60 60" aria-hidden="true" class="port-icon"><rect x="14" y="10" width="32" height="40" rx="4"/><path d="M22 22 h16 M22 30 h16 M22 38 h10"/></svg>
-            </div>
-            <div class="port-body">
-              <h3>Gestión de Redes Sociales</h3>
-              <p>Contenido con dirección: feeds coherentes que transmiten cercanía, propósito y comunidad.</p>
-            </div>
-          </article>
-
-          <article class="port-card port-grosella">
-            <div class="port-visual">
-              <svg viewBox="0 0 60 60" aria-hidden="true" class="port-icon"><path d="M30 12 C18 12 12 22 14 30 C 16 40 24 44 30 48 C 36 44 44 40 46 30 C 48 22 42 12 30 12 Z"/></svg>
-            </div>
-            <div class="port-body">
-              <h3>Coaching &amp; Estrategia</h3>
-              <p>Procesos de claridad: entender la esencia de la marca antes de comunicarla al mundo.</p>
-            </div>
-          </article>
-
+          <a href="pages/contacto.html" class="explore-card explore-grosella">
+            <svg viewBox="0 0 60 60" aria-hidden="true" class="explore-icon"><path d="M10 18 h40 v26 h-40 z" /><path d="M10 18 L30 36 L50 18" /></svg>
+            <h3>Contacto</h3>
+            <p>¿Tenés una marca o un proyecto que necesita dirección? Hablemos.</p>
+            <span class="explore-link">Escribinos →</span>
+          </a>
         </div>
-
-        <p class="portfolio-note">
-          ¿Querés ver casos reales? <a href="#contacto">Escribinos</a> y te mostramos proyectos a medida de tu rubro.
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== CONTACTO ===== -->
-    <section class="contact" id="contacto">
-      <div class="container contact-inner">
-
-        <div class="contact-intro">
-          <p class="eyebrow eyebrow-light">Contacto</p>
-          <h2 class="section-title light">
-            Hablemos<span class="doodle-asterisk" aria-hidden="true">＊</span>
-          </h2>
-          <p>
-            ¿Tenés una marca, un proyecto o una idea que necesita dirección?
-            Contanos en qué estás pensando y empecemos a construir el puente.
-          </p>
-
-          <ul class="contact-info">
-            <li>
-              <span class="contact-label">Email</span>
-              <a href="mailto:hola@somospuente.com.ar">hola@somospuente.com.ar</a>
-            </li>
-            <li>
-              <span class="contact-label">Instagram</span>
-              <a href="https://instagram.com/somospuente.estudio" target="_blank" rel="noopener">@somospuente.estudio</a>
-            </li>
-            <li>
-              <span class="contact-label">WhatsApp</span>
-              <a href="#">+54 9 ___ ___ ____</a>
-            </li>
-          </ul>
-          <p class="contact-placeholder-note">* Reemplazá estos datos de contacto por los reales antes de publicar el sitio.</p>
-        </div>
-
-        <form class="contact-form" id="contact-form" novalidate>
-          <div class="form-row">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required autocomplete="name">
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-          <div class="form-row">
-            <label for="message">Contanos sobre tu proyecto</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-tangerine">Enviar mensaje</button>
-          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-        </form>
-
       </div>
     </section>
 
@@ -256,10 +123,10 @@
       </div>
 
       <nav class="footer-nav" aria-label="Footer">
-        <a href="#inicio">Inicio</a>
-        <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contacto">Contacto</a>
+        <a href="index.html">Inicio</a>
+        <a href="pages/quienes-somos.html">Quiénes Somos</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/contacto.html">Contacto</a>
       </nav>
 
       <p class="footer-copy">© 2026 Somos Puente. Todos los derechos reservados.</p>

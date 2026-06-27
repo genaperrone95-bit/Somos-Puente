@@ -1,5 +1,7 @@
 // =========================================================
 // SOMOS PUENTE — interacciones del sitio
+// (sitio multi-página: cada .html marca su propio nav-link
+// activo directamente en el HTML, por eso no hay scroll-spy)
 // =========================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,26 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.setAttribute('aria-expanded', 'false');
       });
     });
-  }
-
-  /* ---------- Resaltar sección activa en el nav (scroll-spy) ---------- */
-  const sections = document.querySelectorAll('main section[id]');
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  const setActiveLink = (id) => {
-    navLinks.forEach(link => {
-      link.classList.toggle('active-link', link.getAttribute('href') === `#${id}`);
-    });
-  };
-
-  if ('IntersectionObserver' in window && sections.length) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) setActiveLink(entry.target.id);
-      });
-    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
-
-    sections.forEach(section => observer.observe(section));
   }
 
   /* ---------- Formulario de contacto (demo sin backend) ---------- */
