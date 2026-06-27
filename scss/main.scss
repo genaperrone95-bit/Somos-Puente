@@ -11,11 +11,12 @@
 // 1. Variables de marca (colores, tipografías, breakpoints)
 @use 'abstracts/variables' as *;
 
-// 2. Base: reset, tipografía, botones, doodles
+// 2. Base: reset, tipografía, botones, doodles, divisores
 @use 'base/reset';
 @use 'base/typography';
 @use 'base/buttons';
 @use 'base/doodles';
+@use 'base/dividers';
 
 // 3. Layout: header y footer (se repiten en todas las páginas)
 @use 'layout/header';

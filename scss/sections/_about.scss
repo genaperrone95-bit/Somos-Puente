@@ -5,9 +5,7 @@
 // =========================================================
 
 .about {
-  position: sticky; // se queda fijo hasta que .team lo tapa
-  top: 0;
-  z-index: 1;
+  position: relative;
   background: var(--forest);
   background-image: radial-gradient(circle at 90% 10%, rgba(247, 223, 185, 0.06), transparent 50%);
   color: var(--cream-light);
