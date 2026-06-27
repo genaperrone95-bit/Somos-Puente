@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as *;
+
+// =========================================================
+// PORTFOLIO
+// =========================================================
+
+.portfolio {
+  background: var(--cream-light);
+  padding: 6rem 0;
+
+  @media (max-width: $bp-mobile) { padding: 4rem 0; }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+
+  @media (max-width: $bp-tablet) { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: $bp-mobile) { grid-template-columns: 1fr; }
+}
+
+.port-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(74, 71, 10, 0.08);
+  transition: transform 0.2s ease;
+
+  &:hover { transform: translateY(-6px); }
+}
+
+.port-visual {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.port-icon {
+  width: 30%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.port-forest .port-visual { background: var(--forest); color: var(--cream); }
+.port-blue   .port-visual { background: var(--blue); color: var(--forest-dark); }
+.port-grosella .port-visual { background: var(--grosella); color: var(--cream); }
+
+.port-body {
+  background: var(--white);
+  padding: 1.5rem;
+  flex: 1;
+
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--forest);
+    margin-bottom: 0.4rem;
+  }
+
+  p { font-size: 0.92rem; color: var(--ink); opacity: 0.85; }
+}
+
+.portfolio-note {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  color: var(--forest-dark);
+
+  a { color: var(--tangerine); font-weight: 700; text-decoration: underline; }
+}

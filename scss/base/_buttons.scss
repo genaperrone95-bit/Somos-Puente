@@ -1,0 +1,41 @@
+// =========================================================
+// BOTONES
+// =========================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover { transform: translateY(-2px); }
+}
+
+.btn-small { padding: 0.55rem 1.2rem; font-size: 0.85rem; }
+
+.btn-tangerine {
+  background: var(--tangerine);
+  color: var(--cream-light);
+
+  &:hover { box-shadow: 0 8px 20px rgba(216, 73, 29, 0.35); }
+}
+
+.btn-forest {
+  background: var(--forest);
+  color: var(--cream-light);
+
+  &:hover { box-shadow: 0 8px 20px rgba(104, 100, 13, 0.3); }
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--forest);
+  border: 2px solid var(--forest);
+
+  &:hover { background: var(--forest); color: var(--cream-light); }
+}

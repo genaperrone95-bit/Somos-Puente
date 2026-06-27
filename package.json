@@ -1,0 +1,13 @@
+{
+  "name": "somos-puente",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio de Somos Puente — branding, coaching y gestión de RRSS. Estilos en Sass (scss/), compilados a css/style.css.",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/style.css --style=expanded --no-source-map",
+    "watch:css": "sass scss/main.scss css/style.css --style=expanded --no-source-map --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.101.0"
+  }
+}

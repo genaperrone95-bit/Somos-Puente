@@ -1,0 +1,30 @@
+// =========================================================
+// SOMOS PUENTE — punto de entrada de Sass
+// Compila a: ../css/style.css
+//
+// Basado en el Manual de Marca v.1 2026.
+// No edites css/style.css a mano: ese archivo se genera a
+// partir de estos partials. Editá el partial correspondiente
+// y volvé a compilar (ver README.md).
+// =========================================================
+
+// 1. Variables de marca (colores, tipografías, breakpoints)
+@use 'abstracts/variables' as *;
+
+// 2. Base: reset, tipografía, botones, doodles
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/buttons';
+@use 'base/doodles';
+
+// 3. Layout: header y footer (se repiten en todas las páginas)
+@use 'layout/header';
+@use 'layout/footer';
+
+// 4. Secciones, en el mismo orden en que aparecen en el sitio
+@use 'sections/hero';       // index.html
+@use 'sections/explore';    // index.html
+@use 'sections/about';      // pages/quienes-somos.html
+@use 'sections/team';       // pages/quienes-somos.html
+@use 'sections/portfolio';  // pages/portfolio.html
+@use 'sections/contact';    // pages/contacto.html

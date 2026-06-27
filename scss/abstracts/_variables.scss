@@ -1,0 +1,37 @@
+// =========================================================
+// VARIABLES — tokens de marca y breakpoints
+// Manual de Marca v.1 2026: Vanilla Cream / Forest Green /
+// Tangerine Orange / Pacefull Blue / Grosella Red
+// =========================================================
+
+// --- Breakpoints (Sass) -----------------------------------
+// Usalos en los media queries de cada partial con #{$bp-x}.
+$bp-tablet:        900px; // grillas de 3 a 2 columnas
+$bp-mobile:        720px; // menú hamburguesa + grillas a 1 columna
+$bp-scribble-show: 700px; // a partir de aquí se muestra el doodle del hero
+
+// --- Custom properties (CSS) ------------------------------
+// Quedan como variables CSS (no Sass) a propósito: así se
+// pueden inspeccionar y tunear en vivo desde el navegador.
+:root {
+  /* --- Paleta de marca --- */
+  --cream:        #f7dfb9;
+  --cream-light:  #fffaf1;
+  --forest:       #68640d;
+  --forest-dark:  #4a470a;
+  --tangerine:    #d8491d;
+  --blue:         #7fb5d3;
+  --grosella:     #471010;
+  --white:        #ffffff;
+  --ink:          #423f08;
+
+  /* --- Tipografía --- */
+  --font-display: 'Caveat', cursive;
+  --font-body: 'Arimo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* --- Layout --- */
+  --max-width: 1140px;
+  --gap: 1.5rem;
+  --radius: 18px;
+  --header-h: 78px;
+}

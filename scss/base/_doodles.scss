@@ -1,0 +1,35 @@
+// =========================================================
+// DOODLES — lenguaje gráfico manuscrito de la marca
+// (círculos, asteriscos, flechas — ver "Ilustraciones & Patrones"
+// en el Manual de Marca, pág. 20-21)
+// =========================================================
+
+.doodle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.doodle-wrap { position: relative; display: inline-block; }
+
+.doodle-circle {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 130%; height: 220%;
+  transform: translate(-50%, -50%);
+  color: var(--tangerine);
+  pointer-events: none;
+}
+
+.doodle-asterisk {
+  color: var(--tangerine);
+  font-size: 0.55em;
+  vertical-align: super;
+  margin-left: 0.1em;
+}
+
+.doodle-arrow { width: 28px; height: 22px; color: currentColor; }
+
+.doodle-scribble { color: var(--tangerine); opacity: 0.5; }
