@@ -5,6 +5,9 @@
 // =========================================================
 
 .contact {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--blue);
   color: var(--forest-dark);
   padding: 6rem 0;

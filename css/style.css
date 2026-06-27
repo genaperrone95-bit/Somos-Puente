@@ -349,9 +349,12 @@ body {
 }
 
 .site-footer {
+  position: relative;
+  z-index: 3;
   background: var(--grosella);
   color: var(--cream);
   padding: 3rem 0 2rem;
+  box-shadow: 0 -16px 28px -16px rgba(0, 0, 0, 0.2);
 }
 
 .footer-inner {
@@ -411,7 +414,9 @@ body {
 }
 
 .hero {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--cream);
   padding: 5rem 0 6rem;
   overflow: hidden;
@@ -487,9 +492,13 @@ body {
 }
 
 .explore {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background: var(--cream-light);
   padding: 5rem 0 6rem;
   text-align: center;
+  box-shadow: 0 -16px 28px -16px rgba(0, 0, 0, 0.16);
 }
 @media (max-width: 720px) {
   .explore {
@@ -575,6 +584,9 @@ body {
 }
 
 .about {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--forest);
   background-image: radial-gradient(circle at 90% 10%, rgba(247, 223, 185, 0.06), transparent 50%);
   color: var(--cream-light);
@@ -667,8 +679,12 @@ body {
 }
 
 .team {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background: var(--cream-light);
   padding: 6rem 0;
+  box-shadow: 0 -16px 28px -16px rgba(0, 0, 0, 0.16);
 }
 @media (max-width: 720px) {
   .team {
@@ -775,6 +791,9 @@ body {
 }
 
 .portfolio {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--cream-light);
   padding: 6rem 0;
 }
@@ -874,6 +893,9 @@ body {
 }
 
 .contact {
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background: var(--blue);
   color: var(--forest-dark);
   padding: 6rem 0;

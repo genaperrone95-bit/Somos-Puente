@@ -5,8 +5,12 @@
 // =========================================================
 
 .team {
+  position: sticky; // tapa a .about deslizándose por encima
+  top: 0;
+  z-index: 2;
   background: var(--cream-light);
   padding: 6rem 0;
+  box-shadow: 0 -16px 28px -16px rgba(0, 0, 0, 0.16);
 
   @media (max-width: $bp-mobile) { padding: 4rem 0; }
 }

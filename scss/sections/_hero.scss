@@ -5,7 +5,9 @@
 // =========================================================
 
 .hero {
-  position: relative;
+  position: sticky; // se queda fijo en pantalla mientras se lee, hasta que la siguiente sección lo cubre
+  top: 0;
+  z-index: 1;
   background: var(--cream);
   padding: 5rem 0 6rem;
   overflow: hidden;
